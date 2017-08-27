@@ -8,10 +8,10 @@ CHAT_SIZE_LIMIT = 160;
 MAX_NAME_LEN = 20;
 MAX_ROOM_TITLE_LEN = 45;
 CLIENT_INFO_INTERVAL = 1000; //how often to send the client info, like video time
-DEFAULT_TITLE = "remoteremote";
+DEFAULT_TITLE = "Remote Remote";
 ALERT_TITLE = "ALERT! New Message!";
 var popular_room_gen_data = [
-    {data: "rooms", title: "Popular", id: "!", none: "No rooms loaded.", display_prefix: "", show_title: false},
+    {data: "rooms", title: "User Made", id: "!", none: "No rooms loaded.", display_prefix: "", show_title: false},
     {data: "channels", title: "Channels", id: "_", none: "No channels loaded.", display_prefix: "_", show_title: true}
 ];
 
