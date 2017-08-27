@@ -1012,6 +1012,10 @@ routes['search_youtube'] = function (user, data) {
         http_get(host, path, function (body, status_code) {
 		try {
         		var data = JSON.parse(body);
+       			if (data.items === undefined) {
+				debug("Search error: no items found - " + data);
+				throw 'data is undefined';
+			}
 			for(var i = 0; i < data.items.length; i++) {
 				var item = data.items[i];
                        		results.push({
